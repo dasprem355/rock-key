@@ -17,7 +17,7 @@ pipeline {
         stage('Upload to S3') {
             steps {
                 sh '''
-                  aws s3 cp data/ s3://${S3_BUCKET}/ --recursive
+                  aws s3 cp data1/ s3://${S3_BUCKET}/ --recursive
                 '''
             }
         }
